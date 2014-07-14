@@ -6,15 +6,15 @@ class Parcel
 		@weight = weight
 	end
 	def dimensions
-		@height * @width * @length
+		@height.to_i * @width.to_i * @length.to_i
 	end
 	def cost_to_ship
 		if self.dimensions <= 10
-			1 * @weight
+			1 * @weight.to_i
 		elsif self.dimensions <= 20
-			2 * @weight
+			2 * @weight.to_i
 		else
-			"UNSHIPPABLE - TOO BIG"
+			false
 		end
 	end
 end

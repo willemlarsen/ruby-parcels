@@ -10,7 +10,7 @@ describe 'Parcel' do
 		test_parcel = Parcel.new(4, 5, 1, 1)
 		expect(test_parcel.dimensions).to eq(20)
 	end
-	it 'calculates shipping cost based on weigth and dimensions' do
+	it 'calculates shipping cost based on weight and dimensions' do
 		test_parcel = Parcel.new(4, 5, 1, 2)
 		expect(test_parcel.cost_to_ship).to eq(4)
 	end

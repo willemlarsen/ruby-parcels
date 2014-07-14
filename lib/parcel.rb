@@ -1,5 +1,5 @@
 class Parcel
-	def initialize(height, width, length)
+	def initialize(height, width, length, weight)
 		@height = height
 		@width = width
 		@length = length
